@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - Premium Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <form id="todoForm" class="todo-form">
+            <input type="text" id="taskName" placeholder="Tuliskan Nama Kamu" required>
+            <input type="date" id="taskDate" required>
+            <button type="submit" id="addBtn" class="btn-plus">+</button>
+        </form>
+
+        <div class="actions-bar">
+            <button id="filterBtn" class="btn-secondary">Filter</button>
+            <button id="deleteAllBtn" class="btn-accent">Delete All</button>
+        </div>
+
+        <div class="list-wrapper">
+            <div class="list-header">
+                <div>Task</div>
+                <div>Due Date</div>
+                <div>Status</div>
+                <div>Actions</div>
+            </div>
+            <ul id="todoList" class="todo-list">
+                <!-- Tasks will be injected here -->
+            </ul>
+            <div id="emptyMessage" class="empty-state">
+                No task found
+            </div>
+        </div>
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
